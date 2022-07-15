@@ -3,6 +3,8 @@ const getBtn = document.getElementById("get-btn");
 const apiKey = "e25d34f3-6b75-4369-bd96-c00454a5bfc2";
 const url = `https://api.cricapi.com/v1/currentMatches?apikey=${apiKey}&offset=0`;
 //url
+//k
+
 
 let count=0;
 getBtn.addEventListener("click", () => {
