@@ -2,6 +2,8 @@ const root = document.getElementById("root");
 const getBtn = document.getElementById("get-btn");
 const apiKey = "e25d34f3-6b75-4369-bd96-c00454a5bfc2";
 const url = `https://api.cricapi.com/v1/currentMatches?apikey=${apiKey}&offset=0`;
+//url
+
 let count=0;
 getBtn.addEventListener("click", () => {
   root.innerHTML = `<div class="spinner-border text-light align-self-center" role="status"><span class="visually-hidden">Loading...</span></div>`;
@@ -12,6 +14,7 @@ getBtn.addEventListener("click", () => {
       root.innerHTML = `<h1 class="display-4 w-100 text-center mb-3"><span class="text-danger">Live</span> Cricket Score</h1>`;
       for(let i=0;i<matches.length;i++){
         count++;
+        // api
         const match = matches[i];
         root.innerHTML += `
             <div class="card my-2 border-0 overflow-hidden">
